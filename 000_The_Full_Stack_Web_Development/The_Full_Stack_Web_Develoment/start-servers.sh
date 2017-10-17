@@ -13,7 +13,7 @@ done
 
 
 METEOR_DIRS=(
-"09_Meteor.js/9.1_Simple_App/"
+"09_Meteor.js/Quick_todos/"
 )
 
 for i in "${METEOR_DIRS[@]}"; do
