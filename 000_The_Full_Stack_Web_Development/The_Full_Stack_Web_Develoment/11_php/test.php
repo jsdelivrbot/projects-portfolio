@@ -1,0 +1,1 @@
+<?php echo getenv('MYSQL_ROOT_PASSWD'); ?>
