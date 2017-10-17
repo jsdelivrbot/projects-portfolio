@@ -38,3 +38,15 @@ for i in "${ANGULAR_DIRS[@]}"; do
   PORT=$(cat ${DIR}port)
   screen -dmS portfolio-server bash -c "cd ${ROOT_DIR}${ANGULAR_ROOT_DIR}/$i && ng serve --port $PORT"
 done
+
+RAILS_ROOT_DIR="12_Ruby_On_Rails/"
+RAILS_DIRS=(
+"12.1_quickstart/"
+"12.2_RailsApp_Part1/"
+"12.3_RailsApp_Part2/"
+)
+for i in "${RAILS_DIRS[@]}"; do
+  DIR="${ROOT_DIR}${RAILS_ROOT_DIR}$i"
+  PORT=$(cat ${DIR}port)
+  screen -dmS portfolio-server bash -c "cd ${ROOT_DIR}${RAILS_ROOT_DIR}/$i && rails s -p $PORT"
+done
