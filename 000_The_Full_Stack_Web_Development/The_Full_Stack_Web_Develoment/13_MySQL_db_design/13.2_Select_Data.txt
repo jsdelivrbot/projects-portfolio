@@ -1,0 +1,36 @@
+-- Select all from table
+SELECT * FROM customers;
+
+-- Select specific from table
+SELECT first_name, last_name FROM customers;
+
+-- Conditional select all from table
+SELECT * FROM customers WHERE state = 'MA'; 
+SELECT * FROM customers WHERE id = 2;
+SELECT * FROM customers WHERE id > 3;
+
+-- Between
+SELECT id, email FROM customers WHERE id BETWEEN 2 AND 4;
+
+-- Like: % is the wildcard -> [WHERE city LIKE 'B%'] == Cities that start with B.
+SELECT * FROM customers WHERE city LIKE 'B%';
+SELECT * FROM customers WHERE city LIKE 'Bo%';
+SELECT * FROM customers WHERE city LIKE '%o%';
+
+
+-- In, Or
+SELECT * FROM customers WHERE city = 'Amesbury' OR 'Salisbury';
+SELECT * FROM customers WHERE city IN('Amesbury', 'Salisbury');
+
+-- Distinct
+SELECT DISTINCT city FROM customers;  -- Returns all cities without repeating them
+
+-- Aliases
+SELECT first_name AS "First Name", last_name AS "Last Name" FROM customers;  
+-- Returns a table with the fist_name and last_name, with the names of the columns formated to "First Name" and "Last Name"
+
+-- Concat
+SELECT CONCAT(first_name,' ',last_name) AS 'Name', CONCAT(street_address,' ',city,' ',state) AS 'Address' FROM customers; 
+-- Returns a table of 2 columns, Name and Address, with the info concatenated inside them
+
+

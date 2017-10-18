@@ -1,0 +1,41 @@
+
+-- Inner Join
+SELECT customers.first_name, customers.last_name, orders.order_number, orders.order_date
+FROM customers
+INNER JOIN orders
+ON customers.id = orders.customer_id;
+-- returns customers.first_name, customers.last_name, orders.order_number, orders.order_date. It joints the 2 tables together, and returns only the cases that have value for the 2 tables.
+
+
+-- Left Join
+SELECT customers.first_name, customers.last_name, orders.order_number, orders.order_date
+FROM customers
+LEFT JOIN orders
+ON customers.id = orders.customer_id
+ORDER BY customers.last_name;
+-- Joins the 2 tables together, but it gets ALL the customers, even if they don't have an order (it fills the order fields with NULL). In this situation, the inner joint would be the better to use.
+
+
+-- Right Join
+SELECT customers.first_name, customers.last_name, orders.order_number, orders.order_date
+FROM customers
+RIGHT JOIN orders
+ON customers.id = orders.customer_id
+ORDER BY customers.last_name;
+-- Same as Left join but printing all the orders, even those that have no customer (here is not possible, so it is a good solution).
+
+
+-- Multiple Joins
+SELECT customers.first_name, customers.last_name, orders.order_number, orders.order_date, products.name
+FROM orders
+INNER JOIN products ON orders.product_id = products.id
+INNER JOIN customers ON orders.customer_id = customers.id
+ORDER BY orders.order_number;
+
+
+-- Multiple Joins with Concat and Aliases
+SELECT CONCAT(customers.first_name, ' ', customers.last_name) AS 'Name', CONCAT(orders.order_number,' ', orders.order_date) AS 'Order', products.name AS 'Product'
+FROM orders
+INNER JOIN products ON orders.product_id = products.id
+INNER JOIN customers ON orders.customer_id = customers.id
+ORDER BY orders.order_number;
