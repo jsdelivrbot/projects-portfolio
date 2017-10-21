@@ -21,7 +21,7 @@ MongoClient.connect(url, function(err, db){
 	});
 	*/
 
-	
+
 	FindDocuments(db, function(){
 		db.close();
 	});
@@ -53,8 +53,8 @@ const InsertDocument = function(db, callback){
 	const collection = db.collection('users');
 	// Insert Docs
 	collection.insert({
-		name: 'Brad Traversy',
-		email: 'brad@test.com'
+		name: 'Guillem Parrado',
+		email: 'guillem@test.com'
 	}, function(err, result){
 		if(err){
 			return console.dir(err);
@@ -128,7 +128,7 @@ const UpdateDocument = function(db, callback){
 	const collection = db.collection('users');
 
 	collection.updateOne({name:'John Doe'},
-		{$set: {email:'john@something.com'}}, 
+		{$set: {email:'john@something.com'}},
 		function(err, result){
 			if(err){
 				return console.dir(err);

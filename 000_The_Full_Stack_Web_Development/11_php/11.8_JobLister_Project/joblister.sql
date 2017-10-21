@@ -65,7 +65,7 @@ CREATE TABLE `jobs` (
 --
 
 INSERT INTO `jobs` (`id`, `category_id`, `company`, `job_title`, `description`, `salary`, `location`, `contact_user`, `contact_email`, `post_date`) VALUES
-(1, 1, 'JP Mortage', 'Senior Investor', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at elementum enim. In ullamcorper molestie convallis. Praesent luctus rutrum odio eget interdum. Nam interdum dictum nulla,', '90k', 'Boston', 'Brad Traversy', 'brad@gmail.com', '2016-10-12 16:38:51'),
+(1, 1, 'JP Mortage', 'Senior Investor', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at elementum enim. In ullamcorper molestie convallis. Praesent luctus rutrum odio eget interdum. Nam interdum dictum nulla,', '90k', 'Boston', 'Guillem Parrado', 'guillem404@gmail.com', '2016-10-12 16:38:51'),
 (2, 2, 'Tech Guy', 'Entry Level Programmer', 'Proin tincidunt neque non leo ultrices, ac pharetra libero porttitor. Vestibulum vitae odio eget lectus vulputate vulputate. Praesent finibus velit erat, sit amet consequat nulla scelerisque vel. ', '50k', 'Springfield', 'John Doe', 'john@gmail.com', '2016-10-12 16:38:51');
 
 --

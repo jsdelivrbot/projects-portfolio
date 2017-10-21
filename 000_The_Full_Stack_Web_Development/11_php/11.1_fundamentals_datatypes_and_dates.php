@@ -25,8 +25,8 @@
  echo $users[3];
 
  $ages = Array(
-  'Karen' => 34, 
-  'Larry' => 44, 
+  'Karen' => 34,
+  'Larry' => 44,
   'Jeff' => 38);
 
  echo $ages['Larry'];
@@ -58,7 +58,7 @@
     echo 'Number '.$i.'<br>';
     $i++;
  }
- 
+
 $users = Array('Mike', 'Jill', 'Jose');
 
 foreach($users as $user){
@@ -102,7 +102,7 @@ var_dump($myNull);
 //echo str_word_count($myStr);
 //echo strrev($myStr);
 //echo strpos($myStr, 'World');
-//echo str_replace('World', 'Brad', $myStr);
+//echo str_replace('World', 'There', $myStr);
 
 //echo max(33,2,66,5554,777,3844);
 //echo min(33,2,66,5554,777,3844);
@@ -125,7 +125,3 @@ echo "The time is ". date('h:i:sa') . '<br>';
 
 $d = strtotime("tomorrow");
 echo "The date is ". date('Y-m-d', $d) . '<br>';
-
-
-
-

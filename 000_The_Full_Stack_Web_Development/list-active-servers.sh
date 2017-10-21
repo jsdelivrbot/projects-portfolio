@@ -1,1 +1,0 @@
-screen -ls | grep portfolio-server

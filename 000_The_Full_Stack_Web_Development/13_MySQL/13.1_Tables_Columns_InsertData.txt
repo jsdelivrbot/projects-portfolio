@@ -19,7 +19,7 @@ CREATE TABLE customers(
 );
 
 -- Insert One
-INSERT INTO customers(first_name, last_name, email, password, street_address, city, state, zip) VALUES('Brad', 'Traversy', 'brad@gmail.com', '123456', '20 Main st', 'Boston', 'MA', '01294');
+INSERT INTO customers(first_name, last_name, email, password, street_address, city, state, zip) VALUES('Guillem', 'Parrado', 'guillem404@gmail.com', '123456', '20 Main st', 'Boston', 'MA', '01294');
 
 -- Insert Multiple
 INSERT INTO customers(first_name, last_name, email, password, street_address, city, state, zip) VALUES
