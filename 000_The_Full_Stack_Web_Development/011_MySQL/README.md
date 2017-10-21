@@ -1,0 +1,2 @@
+if you click on test_live.html, you'll be redirected to a phpMyAdmin interface using a MySQL instance. Enter user: 'test', password: '1234'.
+You'll be granted access to a test database, where you can test all the SQL code in this project.
