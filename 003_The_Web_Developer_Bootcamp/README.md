@@ -1,4 +1,4 @@
-# 003 The Web Developer Bootcamp
+# 003 - The Web Developer Bootcamp
 
 <br>
 
