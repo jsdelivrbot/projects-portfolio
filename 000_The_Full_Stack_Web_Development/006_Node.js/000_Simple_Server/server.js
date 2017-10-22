@@ -1,8 +1,8 @@
 var http = require('http');
 var fs = require('fs');
-
+var port = require('./get_port');
 var host = '127.0.0.1';
-var port = '3001';
+
 
 fs.readFile('./static/index.html', function(err, html){
 	if(err){

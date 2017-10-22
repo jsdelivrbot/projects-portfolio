@@ -2,8 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 //var pug = require('pug');
-
-var port = 3003;
+var port = require('./get_port');
 
 var app = express();
 

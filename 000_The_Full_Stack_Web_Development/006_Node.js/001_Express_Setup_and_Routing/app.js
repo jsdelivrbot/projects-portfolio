@@ -1,8 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-
-var port = 3002;
+var port = require('./get_port');
 
 var app = express();
 
