@@ -4,4 +4,4 @@
 
 * Course and certificate [here](https://www.udemy.com/certificate/UC-YIR26MYK/)
 
-* Live site [here](http://http://localhost/100_Modern_React_With_Redux/)
+* Live site [here](http://localhost/100_Modern_React_With_Redux/)
