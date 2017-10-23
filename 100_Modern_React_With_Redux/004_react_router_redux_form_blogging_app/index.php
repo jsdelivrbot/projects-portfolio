@@ -1,1 +1,1 @@
-<script> window.location = "http://localhost:3001"; </script>
+<script> window.location = "http://localhost:3022"; </script>
