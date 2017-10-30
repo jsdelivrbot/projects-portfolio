@@ -8,7 +8,6 @@ import {
 } from './types';
 
 const ROOT_URL = 'http://localhost:4001';
-debugger;
 
 export function signinUser({ email, password }) {
   return function(dispatch) {
