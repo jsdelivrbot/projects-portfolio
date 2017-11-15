@@ -7,6 +7,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var bodyParser = require('body-parser');
 var flash = require('connect-flash');
 var port = require('./get_port');
+var host = '0.0.0.0';
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -70,5 +71,5 @@ app.get('*', function(req, res, next){
 app.use('/', routes);
 app.use('/users', users);
 
-app.listen(port);
+app.listen(port, host);
 console.log('Server started on port ' + port);

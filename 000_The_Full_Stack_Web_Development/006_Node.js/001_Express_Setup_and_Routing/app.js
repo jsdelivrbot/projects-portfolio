@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 var port = require('./get_port');
+var host = '0.0.0.0';
 
 var app = express();
 
@@ -22,7 +23,7 @@ app.get('/about', function(req, res) {
   res.send('About Page');
 });
 
-app.listen(port);
+app.listen(port, host);
 console.log('Server started on port ' + port);
 
 module.exports = app;

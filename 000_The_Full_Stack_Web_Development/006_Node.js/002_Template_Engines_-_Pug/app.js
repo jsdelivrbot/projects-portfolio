@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 //var pug = require('pug');
 var port = require('./get_port');
+var host = '0.0.0.0';
 
 var app = express();
 
@@ -35,7 +36,7 @@ app.get('/contact', function(req, res) {
   res.render('contact');
 });
 
-app.listen(port);
+app.listen(port, host);
 console.log('Server started on port ' + port);
 
 module.exports = app;
