@@ -17,6 +17,7 @@ module.exports = {
     extensions: ["", ".js", ".jsx"]
   },
   devServer: {
-    contentBase: "./"
+    disableHostCheck: true,
+		contentBase: "./"
   }
 };
