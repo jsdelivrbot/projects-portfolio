@@ -3,7 +3,7 @@
 $server     = "localhost";
 $username   = "root";
 $password   = getenv('MYSQL_ROOT_PASSWD');
-$db         = "course_uwdadc_mysql";
+$db         = "login_app";
 
 // Create a connection
 $conn = mysqli_connect( $server, $username, $password, $db );

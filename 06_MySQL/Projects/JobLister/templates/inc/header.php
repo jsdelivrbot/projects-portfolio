@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>JobLister</title>
-	<link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>

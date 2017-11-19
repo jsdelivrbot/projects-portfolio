@@ -11,8 +11,8 @@ if(isset($_POST['name'])){
 }
 
 if(isset($_GET['action']) && $_GET['action'] == 'clear'){
-	session_unset(); 
-	session_destroy(); 
+	session_unset();
+	session_destroy();
 	header("Location: index.php");
 }
 
@@ -27,7 +27,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
 <html>
 <head>
 	<title>Sessions - PHP</title>
-	<link rel="stylesheet" href="http://bootswatch.com/cyborg/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<style>
 		.delete{color:white;}
 	</style>

@@ -3,7 +3,7 @@
 $server     = "localhost";
 $username   = "root";
 $password   = getenv('MYSQL_ROOT_PASSWD');
-$db         = "db_clientaddressbook";
+$db         = "client_address_book";
 
 // create a connection
 $conn = mysqli_connect( $server, $username, $password, $db );
